@@ -1,4 +1,4 @@
-//Step 1//
+//step 1//
 
 var mongoose = require('mongoose');
 var connectionString = 'mongodb://localhost/blog2'
