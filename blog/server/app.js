@@ -13,10 +13,10 @@ var express = require('express'),
 
 	require('./db/db.js');
 
+//step9
 var PostController = require('./controllers/PostController');
-
 app.use('/posts', PostController);
-
+//
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs'); //npm install hbs

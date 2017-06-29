@@ -2,6 +2,9 @@
 
 <h1>Fro-Yo Problems</h1>
 <ul>
+	{{#each allPosts}}
+		<li> <a href='/posts/all/{{this.id}}'/>{{ this.title }}</a> </li>
+	{{#each}}
 	<li>Too Cold!</li>
 	<li>No Flavor</li>
 	<li>Too Much Candy</li>
@@ -10,10 +13,15 @@
 	<li>Fro-Yo Bubble</li>
 </ul>
 
+{{!-- step 10 create form --}}
 <form>
 	<input name='title' placeholder='Title'/>
+	<br>
 	<input name='author' placeholder='Author'/>
+	<br>
 	<input name='date' placeholder='Date'/>
+	<br>
 	<input name='text' placeholder='Your fro-yo related blog post here'/>
+	<br>
 	<button>Submit</button>
 </form>
